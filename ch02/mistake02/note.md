@@ -1,8 +1,8 @@
-UNNECESSARY NESTED CODE
+# UNNECESSARY NESTED CODE
 
 Nesting is the enemy of readabilty. Every extra level forces your brain to track one more context simultaneously
 
-RULES:
+# RULES:
 
 - If an if block returns, omit the else.
   // GOOD — else is unnecessary after a return
@@ -20,4 +20,4 @@ RULES:
   second column = what goes wrong(edge cases, errors)
 
 - Handle edge cases early, return immediately, never use else after a return.
-- Keep the happy path flowing down the left edge  
+- Keep the happy path flowing down the left edge

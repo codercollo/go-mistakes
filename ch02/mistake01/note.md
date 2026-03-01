@@ -1,18 +1,19 @@
-UNINTENDED VARIABLE SHADOWING
+# UNINTENDED VARIABLE SHADOWING
 
-Shadowing - A variable is shadowed when a new variable with the same name is declared inside an inner block, hiding the outer variable. The outer variable still exists but cannot be reached 
+Shadowing - A variable is shadowed when a new variable with the same name is declared inside an inner block, hiding the outer variable. The outer variable still exists but cannot be reached
 inside that block
 
-FIX - cleaner : Pre-declare err, use = not := 
+# FIX - cleaner : Pre-declare err, use = not :=
+
 var (
-  client *http.Client
-  err error
+client \*http.Client
+err error
 )
 
 if tracing {
-  client, err := createClientWithTracing()
+client, err := createClientWithTracing()
 } else {
-  client, err := createDefaultClient()
+client, err := createDefaultClient()
 }
 
 If a variable needs to survive outside a block, declare it outside
