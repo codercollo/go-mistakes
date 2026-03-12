@@ -1,4 +1,4 @@
-# Mistake 11: Not Using the Functional Options Pattern
+# Mistake 9: Not Using the Functional Options Pattern
 
 The Problem:
 -You're building a library with a function like:

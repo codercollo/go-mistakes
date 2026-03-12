@@ -1,0 +1,15 @@
+linters:
+  enable:
+    - govet # standard Go analyzer (detects shadowing, etc.)
+    - errcheck # catches unchecked errors
+    - gocyclo # flags high cyclomatic complexity
+    - goconst # finds repeated string literals that should be constants
+    - godot # enforces punctuation on doc comments
+    - staticcheck # broad static analysis
+
+linters-settings:
+  gocyclo:
+    min-complexity: 10 # flag functions with complexity > 10
+
+run:
+  timeout: 3m
